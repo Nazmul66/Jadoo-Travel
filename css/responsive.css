@@ -1,0 +1,307 @@
+@media (min-width: 320px) and (max-width: 576px){
+
+
+/*=========================
+     Header section start
+  =========================*/
+header{
+    padding: 30px 4%;
+}
+header.sticky{
+    padding: 25px 4%;
+}
+.mein-menu {
+    position: absolute;
+    width: 60%;
+    height: 118vh;
+    top: 0;
+    left: -80%;
+    background: #f7f7f7;
+    display: block;
+    z-index: 11;
+    margin-top: 0;
+    box-shadow: 14px 0px 20px rgba(0,0,0,0.25) ;
+    transition: all 0.3s ease-in-out;
+}
+.mein-menu.active{
+    left: 0%;
+    transition: all 0.3s ease-in-out;  
+}
+.mein-menu .list-element {
+    margin-right: 0;
+    margin-top: 90px;
+}
+.mein-menu .list-element ul {
+    text-align: center;
+}
+.mein-menu .list-element ul li {
+    display: block;
+    margin: 25px 0px;
+}
+.mein-menu .list-element ul li a {
+    font-weight: 600;
+}
+.mein-menu .access-form ul {
+    text-align: center;
+}
+.mein-menu .access-form ul li {
+    display: block;
+    margin: 30px 0px;
+}
+.mein-menu .access-form ul li a {
+    font-weight: 600;
+}
+nav .fa-bars{
+    display: block;
+    font-size: 30px;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.fa-xmark{
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+/*=========================
+     Hero section start
+  =========================*/
+.hero-section {
+    padding: 130px 0% 50px;
+}
+.hero-details label {
+    font-size: 16px !important;
+}
+.hero-details h1 {
+    line-height: 68px !important;
+    font-size: 60px !important;
+}
+.hero-details p {
+    line-height: 26px;
+    padding: 0;
+}
+.hero-details .video-sec {
+    display: block;
+}
+.hero-details .video-sec a {
+    display: block;
+    width: 170px;
+    margin: 0 0 25px 0;
+    text-align: center;
+    padding: 16px 0px;
+}
+.video-sec .vdo {
+    margin-left: 0;
+}
+.images img {
+    position: static;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: -24px;
+}
+
+/*=========================
+    Service section start
+  =========================*/
+.service-section {
+    padding: 70px 0 0px;
+}
+.service-section .deco {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 9%;
+}
+.service-section h5 {
+    margin-bottom: 14px;
+    font-size: 16px !important;
+}
+.service-section h2 {
+    margin-bottom: 50px;
+    line-height: 48px;
+}
+.service-details {
+    position: relative;
+    z-index: 1;
+    padding: 38px 50px;
+    margin-bottom: 20px;
+}
+.service-details01 {
+    padding: 30px 50px;
+    margin-bottom: 20px;
+}
+
+/*==============================
+    destinations section start
+  ==============================*/
+.destinations-section {
+    padding: 50px 0 0;
+}
+.destinations-section .deco3 {
+    position: absolute;
+    bottom: 7%;
+    right: 0;
+}
+.destinations-section h5 {
+    font-size: 16px !important;
+}
+.destinations-details {
+    margin-bottom: 60px;
+}
+.destinations-details img{
+    height: 100%;
+ }
+
+/*===========================
+     Booking section start
+  ===========================*/
+.booking-details {
+    padding-right: 0;
+}
+.booking-details h5 {
+    font-size: 16px !important;
+    text-align: center;
+}
+.booking-details h2 {
+    text-align: center;
+}
+.booking-detail-x .booking-describe p {
+    margin: 0;
+    font-weight: 400;
+    padding-right: 60px;
+}
+.booking-img .simage {
+    position: static;
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: -114px;
+}
+
+/*=============================
+    testimonial section start
+  =============================*/
+ .testimonial-section h5 {
+    text-align: center;
+}
+.testimonial-section h2 {
+    font-size: 50px !important;
+    text-align: center;
+    margin-top: 0 !important;
+}
+.owl-carousel.owl-loaded {
+    margin-top: 70px;
+}
+.owl-nav {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: -50px;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    margin: 0px 8px !important;
+}
+.owl-carousel .owl-nav, .owl-carousel .owl-prev {
+    color: #3E2E4D !important;
+    padding: 0!important;
+    font-size: 20px !important;
+}
+i.fa-solid.fa-arrow-left-long {
+    padding: 8px 12px 7px 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    position: absolute;
+    right: 58px;
+    top: 0;
+} 
+i.fa-solid.fa-arrow-right-long {
+    padding: 8px 12px 7px 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+} 
+.testimonial-carousel {
+    padding: 40px 40px 40px 75px;
+}
+.testimonial-carousel h5 {
+    text-align: left !important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    opacity: 0.7;
+}
+
+/*===========================
+     subcribe section start
+  ===========================*/
+.subcribe-section {
+    padding: 50px 0 70px;
+}
+.subcribe-section .subcribe-details {
+    padding: 50px 18px;
+    position: relative;
+    z-index: 1;
+}
+.subcribe-section .subcribe-details .send-ico {
+    top: -30px;
+    right: -12px;
+}
+.subcribe-section .subcribe-details .send-ico-2 {
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+    width: 29%;
+    z-index: -6;
+}
+.subcribe-section .subcribe-details h3 {
+    font-size: 24px !important;
+    line-height: 38px !important;
+}
+.forms .single-form [type=email] {
+    height: 50px;
+}
+.forms .single-form .fa-envelope {
+    top: 18px;
+}
+.forms a.btn-hash {
+    padding: 12px 38px;
+}
+
+/*===========================
+     Footer section start
+  ===========================*/
+footer {
+    padding: 50px 0 40px;
+}
+.footer-menu {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.footer-details {
+    text-align: center;
+}
+footer .footer-details img {
+    margin-bottom: 30px;
+}
+footer .footer-details p {
+    font-size: 16px !important;
+    padding-right: 0;
+    line-height: 26px;
+}
+
+.social-icon ul {
+    text-align: center;
+}
+.social-icon P {
+    text-align: center;
+}
+.social-icon .app-link {
+    justify-content: space-around;
+    margin: 30px 0 0 0;
+}
+.footer-copyright span {
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+}

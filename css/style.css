@@ -1,0 +1,658 @@
+/*====================
+       Google font
+  ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Volkhov:wght@400;700&display=swap');
+
+/*===================
+      Global Css
+  ===================*/
+:root{
+    --color1 : #212832;
+    --color2 : #181E4B;
+    --color3 : #5E6282;
+    --color4 : #F1A501;
+    --color5 : #DF6951;
+    --color6 : #14183E;
+    --color7 : #1E1D4C;
+    --color8 : #080809;
+    --L-gradient : linear-gradient(#FF946D, #FF7D68);
+    --box-shadow : 0px 100px 80px rgba(0,0,0,0.02),
+                   0px 64px 46px rgba(0,0,0,0.0152),
+                   0px 38px 25px rgba(0,0,0,0.0121),
+                   0px 20px 13px rgba(0,0,0,0.01),
+                   0px 8px 6.5px rgba(0,0,0,0.0079),
+                   0px 1.85px 3.15px rgba(0,0,0,0.0048);             
+} 
+body{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: #FFF;
+}
+h1{
+    font-family: 'Volkhov', serif;
+    font-size: 84px;
+    font-weight: 700;
+    color: var(--color2);
+    letter-spacing: -4px;
+    line-height: 89px;
+}
+h2{
+    font-family: 'Volkhov', serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--color6);
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color3);
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 54px;
+}
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20PX;
+    font-weight: 600;
+    color: var(--color7);
+}
+h5{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color3);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color5);
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color3);
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+
+/*=========================
+     Header section start
+  =========================*/
+header{
+    position: fixed;
+    padding: 30px 8%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: all 0.3s ease-in-out;
+}
+header.sticky{
+   background-color: #FFF;
+   box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+   padding: 25px 8%;
+   transition: all 0.3s ease-in-out;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mein-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+.mein-menu .list-element{
+    margin-right: 35px;
+}
+.mein-menu .list-element ul{
+    padding: 0;
+    margin: 0;
+}
+.mein-menu .list-element ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+}
+.mein-menu .list-element ul li a{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color1);
+    font-size: 17px;
+    font-weight: 500;
+}
+.mein-menu .access-form ul{
+    padding: 0;
+    margin: 0;
+}
+.mein-menu .access-form ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+}
+.mein-menu .access-form ul li a{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color1);
+    font-size: 17px;
+    font-weight: 500;
+}
+.mein-menu .access-form ul li .btn-login{
+    border: 2px solid var(--color1);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+nav .fa-bars{
+    display: none;
+}
+/*=========================
+     Hero section start
+  =========================*/
+.hero-section{
+    padding: 230px 0 100px;
+    background: url(../image/hero-bg.jpg) no-repeat center top;
+    background-size: contain;
+}
+.hero-details label{
+    margin-bottom: 20px;
+}
+.hero-details h1{
+    margin-bottom: 30px;
+}
+.hero-details p{
+    padding-right: 120px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+.hero-details .video-sec{
+  display: flex;
+  align-items: center;
+}
+.hero-details .video-sec a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--color4);
+    color: #FFF;
+    padding: 16px 26px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+.video-sec .vdo{
+  display: flex;
+  align-items: center;
+  margin-left: 44px;
+}
+.video-sec .vdo .bx-play{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 30px;
+    background: var(--color5);
+    color: #FFF;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 15px 30px rgba(223,105,81,0.3);
+}
+.video-sec .vdo span{
+  font-family: 'Poppins', sans-serif;
+  color: #686D77;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 14px;
+}
+
+.images{
+    position: relative;
+}
+.images img{
+    position: absolute;
+    width: 147%;
+    left: -33%;
+    top: -125px;
+}
+
+/*=========================
+    Service section start
+  =========================*/
+.service-section{
+    position: relative;
+  padding: 120px 0 90px;
+}
+.service-section .deco{
+    position: absolute;
+    top: 20%;
+    right: 4%;
+    width: 9%;
+}
+.service-section h5{
+   text-align: center;
+   margin-bottom: 15px;
+}
+.service-section h2{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.service-details{
+    padding: 35px;
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+}
+.service-details:hover{
+    box-shadow: var(--box-shadow);
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+}
+.service-details01{
+    position: relative;
+    padding: 35px;
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFF;
+}
+.service-details01:hover{
+    box-shadow: var(--box-shadow);
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+}
+.service-details01 h4{
+    text-align: center;
+    margin-bottom: 18px;
+}
+.service-details01 p{
+    text-align: center;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0;
+    padding: 0 12px;
+}
+.service-details01 .deco2{
+    position: absolute;
+    z-index: -1;
+    bottom: -45px;
+    left: -30px;
+}
+.service-details .group-01{
+    display: block;
+    margin: 0 auto 20px;
+}
+.service-details01 .group-02{
+    display: block;
+    margin: 0 auto 22px;
+}
+.service-details .group-03{
+    display: block;
+    margin: 7px auto 20px;
+}
+.service-details .group-04{
+    display: block;
+    margin: 15px auto 20px;
+}
+.service-details h4{
+    text-align: center;
+    margin-bottom: 18px;
+}
+.service-details p{
+    text-align: center;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0;
+    padding: 0 12px;
+}
+
+/*==============================
+    destinations section start
+  ==============================*/
+.destinations-section{
+    position: relative;
+    padding: 50px 0;
+}
+.destinations-section .deco3{
+    position: absolute;
+    bottom: 11%;
+    right: 6%;
+}
+.destinations-section h5{
+    text-align: center;
+    margin-bottom: 15px; 
+}
+.destinations-section h2{
+    text-align: center;
+    margin-bottom: 60px;   
+}
+.destinations-details{
+  position: relative;
+  border-radius: 30px;
+}
+.destinations-details img{
+   width: 100%; 
+   height: 506px;
+}
+.destinations-details .destinations-title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: #FFF;
+    padding: 20px 20px 30px;
+    box-shadow: 0px 15px 41px rgb(0 0 0 / 10%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.destinations-title .address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.destinations-title .address h6{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color3);
+    font-weight: 500;
+    font-size: 16px;
+}
+.destinations-title .address span{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color3);
+    font-weight: 500;
+    font-size: 16px;
+}
+.destinations-title .send-it{
+  display: flex;
+  align-items: center;
+}
+.destinations-details .send-it .bxs-navigation{
+    font-size: 20px;
+    color: var(--color8);
+}
+.destinations-details .send-it p{
+    font-weight: 500;
+    margin: 0 0 0 14px;
+}
+
+/*===========================
+     Booking section start
+  ===========================*/
+.booking-section{
+   padding: 100px 0;
+}
+.booking-details {
+    padding-right: 50px;
+}
+.booking-details h5{
+    margin-bottom: 15px;    
+}
+.booking-details h2{
+    text-transform: capitalize;
+    margin-bottom: 45px;
+}
+.booking-detail-x{
+    margin-bottom: 45px;
+}
+.booking-detail-x img{
+    float: left;
+    margin-right: 26px; 
+}
+.booking-detail-x .booking-describe{
+    overflow: hidden;
+}
+.booking-detail-x .booking-describe h5{
+    font-weight: 700 !important;
+    font-size: 16px !important;
+}
+.booking-detail-x .booking-describe p{
+    margin: 0;
+    font-weight: 400;
+    padding-right: 126px;
+}
+.booking-img{
+    position: relative;
+}
+.booking-img .simage{
+    position: absolute;
+    width: 124%;
+    top: -140px;
+    left: -20px;
+}
+
+/*==============================
+    Testimonial section start
+  ==============================*/
+.testimonial-section{
+    padding: 60px 0 120px;
+}
+.testimonial-section h5{
+ margin-bottom: 15px;
+}
+.testimonial-section h2{
+    text-transform: capitalize;
+    font-size: 62px !important;
+}
+.testimonial-carousel{
+  position: relative;
+  padding: 40px 85px 40px;
+  margin-top: 30px;
+}
+.testimonial-carousel img{
+    position: absolute;
+    width: 70px !important;
+    top: 0;
+    left: 2px;
+}
+.testimonial-carousel p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color3);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.testimonial-carousel h5{
+  margin-bottom: 3px;
+}
+.testimonial-carousel span{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color3);
+    font-size: 14px;
+    font-weight: 500;
+}
+.owl-stage-outer {
+    box-shadow: var(--box-shadow);
+    border-radius: 24px;
+}
+.owl-dots {
+    position: absolute;
+    bottom: 12%;
+    left: -103%;
+}
+.owl-nav {
+    transform: rotate(90deg);
+    width: 52%;
+    position: absolute;
+    right: -33%;
+    top: 34%;
+}
+.owl-carousel .owl-nav,
+.owl-carousel .owl-prev{
+    color: #3E2E4D !important;
+    padding: 0!important;
+    font-size: 40px !important; 
+}
+.owl-theme .owl-nav [class*=owl-]{
+    margin: 24px !important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent !important;
+    color: #3E2E4D !important;
+    opacity: 0.3;
+}
+/*===========================
+     logo section start
+  ===========================*/
+.logo-section{
+    padding: 0px 0 50px;
+}
+.logo-section .logo-div{
+   text-align: center;
+   padding: 18px;
+   transition: all 0.3s ease-in-out;
+}
+.logo-section .logo-div:hover{
+    box-shadow: 0px 20px 20px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/*===========================
+     subcribe section start
+  ===========================*/
+.subcribe-section{
+  padding: 50px 0 150px;
+}
+.subcribe-section .subcribe-details{
+    position: relative;
+    background: url(../image/subcribe-bg.png) no-repeat center top;
+    background-size: cover;
+    padding: 80px 50px;
+}
+.subcribe-section .subcribe-details .send-ico{
+   position: absolute;
+   top: -20px;
+   right: -20px;
+}
+.subcribe-section .subcribe-details .send-ico-2{
+    position: absolute;
+    bottom: -50px;
+    right: -73px;
+    width: 10%;
+ }
+.subcribe-section .subcribe-details h3{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.forms {
+    display: flex;
+    align-items: center;
+}
+.single-form {
+    position: relative;
+    width: 100%;
+}
+.forms .single-form [type=email]{
+    width: 96%;
+    outline: none;
+    height: 64px;
+    border: none;
+    border-radius: 8px;
+    padding: 0px 0 0 60px;
+}
+.forms .single-form .fa-envelope{
+    position: absolute;
+    color: #39425D;
+    top: 24px;
+    left: 26px;
+    font-size: 19px;
+}
+.forms .single-form [type=email]::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    color: #39425D;
+}
+.forms a.btn-hash{
+    display: block;
+    padding: 19px 44px;
+    color: #FFF;
+    background: var(--L-gradient);
+    border-radius: 8px;
+}
+
+/*===========================
+     Footer section start
+  ===========================*/
+footer{
+   padding: 50px 0 100px;
+}
+footer .footer-details img{
+  margin-bottom: 40px;
+}
+footer .footer-details p{
+  font-weight: 500;
+  font-size: 13px !important;
+  padding-right: 30px;
+  line-height: 18px;
+}
+.footer-menu h6{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color8) !important;
+    font-size: 21px !important;
+    font-weight: 700 !important;
+    margin-bottom: 34px;
+}
+.footer-menu ul{
+  padding: 0;
+  margin: 0;
+}
+.footer-menu ul li{
+   list-style: none;
+   margin: 8px 0;
+   font-family: 'Poppins', sans-serif;
+   color: var(--color3);
+   font-size: 18px;
+   font-weight: 500;
+}
+.social-icon ul{
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.social-icon ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 6px;
+}
+.social-icon ul li i{
+    width: 50px;
+    height: 50px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    color: #000;
+    box-shadow: 0px 4px 12px 0px rgb(0 0 0 / 14%);
+    transition: all 0.3s ease-in-out;
+}
+.social-icon ul li i:hover{
+    color: #FFF;
+    background: conic-gradient(#F1B8EF,#F289AA,#C68BF0,#D164DA,#C963E8,#BFC2E8,#FFC999,#D0D8C9,#BAD0F1,#CED8CB,transparent);
+    transition: all 0.3s ease-in-out;
+}
+.social-icon P{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color3);
+    font-size: 20px;
+    font-weight: 500; 
+}
+.social-icon .app-link{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.social-icon .app-link img{
+   width: 130%;
+}
+.footer-copyright span{
+    display: block;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color3);
+    font-size: 16px;
+    font-weight: 600; 
+    margin-top: 70px;
+}
+
